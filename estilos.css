@@ -124,7 +124,7 @@ header{
 }
 
 .img-header .subtitulo-img button{
-    width: 170px;
+    width: 140px;
     height: 40px;
     background: #ff2e63;
     border-radius: 24px;
@@ -140,4 +140,188 @@ header{
 
 .img-header .subtitulo-img button:hover{
     opacity: 0.6;
+}
+
+/*main Presentacion*/
+
+.presentacion{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.presentacion .info-presentacion{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.presentacion .info-presentacion h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: #252a34;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.presentacion .info-presentacion p{
+    text-align: center;
+    font-size: 17px;
+    color: #252a34;
+    line-height: 35px;
+    margin: 10px 0px;
+}
+
+.presentacion .info-presentacion .presentacion-galeria{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+
+.presentacion .info-presentacion .presentacion-galeria img{
+ width: calc(33.33% -10px); /*q ocupen el mismo espacio (100% del total del documento /3= 33.33) de una fila teniendo en cuenta margenes (-10px)*/
+ height: 200px;
+ object-fit: cover;/*redimensiona las img*/
+ cursor: pointer;
+}
+
+.presentacion .info-presentacion .presentacion-mas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.presentacion .info-presentacion .presentacion-mas button{
+    width: 120px;
+    height: 40px;
+    background: #ff2e63;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.presentacion .info-presentacion .presentacion-mas button:hover{
+    opacity: 0.6;
+}
+
+/*temas*/
+.temas{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(portada7.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+/*cobertura oscura de la imagen de "temas"*/
+
+.temas .degradado{
+    position: absolute; /*p/ q el degradado se sobreponga en el eje */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.temas .ejeZ-temas{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/*fin cobertura img de "temas"*/
+
+.temas .cont-temas{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.temas .cont-temas .cont-titulo-temas{
+    border: 2px solid #fff;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.temas .cont-temas .cont-titulo-temas h2{
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.temas .cont-temas .cont-titulo-temas hr{
+    background: #fff;
+    width: 50%;
+    margin: 10px auto;
+}
+.temas .cont-temas .temas-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
+.temas .cont-temas .temas-img img{
+    width: calc(30% -10px);
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*Otros recursos multimedia*/
+
+.contenedor-total-multimedia{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.contenedor-total-multimedia .cont-multimedia-titulo{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.contenedor-total-multimedia .cont-multimedia-titulo h2{
+    font-size: 50px;
+    color: #252a34;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.contenedor-total-multimedia .cont-multimedia-titulo hr{
+    width: 60%;
+    margin: auto;
+    height: 2px;
+    background: #252a34;
+    border: none;
+}
+
+.contenedor-total-multimedia .cont-recursos-multimedia{
+    width: 90%;
+    margin: 80px auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-total-multimedia .cont-recursos-multimedia .card-multimedia{
+    width: 45%;
+    margin: 20px;
 }
